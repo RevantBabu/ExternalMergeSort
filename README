@@ -1,0 +1,50 @@
+100050054 - Revant Babu M
+100050068 - Naga Varun D
+
+--------------------------------------------------------------------------------------------------------------------------------
+main.c :
+--------------------------------------------------------------------------------------------------------------------------------
+
+conatins the actual logic.
+genSortedRuns() 
+	- creates sorted runs from the input file
+	- writes them into "currentDIR"/SortedRuns
+
+mergeSortedRuns() 
+	- merges the runs generated from previous step
+	- continues till entire file is sorted 
+	- writes to the output File specified
+
+
+Execution :(with example)	
+-------------------------
+cc main.c
+./a.out
+
+Enter the name of file to be sorted : /home/revanth/Desktop/final/test.bin       
+Enter the name of output file : /home/revanth/Desktop/final/test-out.bin
+Enter the number of attributes to be soted on : 2
+Enter the attributes to be soted on : 
+8
+-2
+Enter the bufferSize in Bytes : 90112
+
+
+**** PLEASE DELETE THE DIRECTORY "./SortedRuns" BEFORE TESTING OTHER TESTCASE***********
+
+--------------------------------------------------------------------------------------------------------------------------------
+readIntBin.c :
+--------------------------------------------------------------------------------------------------------------------------------
+can be used to read the bin files (specifically output)
+
+Execution :(with example)
+-------------------------
+cc readIntBin.c
+./a.out
+
+Enter no. file path to read : /home/revanth/Desktop/final/test-out.bin
+Enter no. rows to read : 120001
+
+
+----------------------------------------------------------END OF FILE------------------------------------------------------------
+
